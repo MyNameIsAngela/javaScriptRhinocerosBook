@@ -1,3 +1,10 @@
+<!-- 
+// This code is from the book JavaScript: The Definitive Guide, 6th Edition,
+// (ISBN #978-0596805524). Copyright 2011 by David Flanagan. 
+-->
+<!-- 
+在html文档里嵌入客户端javascript代码的四种方法：一、内联式javascript
+ -->
 <!DOCTYPE html>
 <html>
 <head>
