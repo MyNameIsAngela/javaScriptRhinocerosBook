@@ -1,0 +1,38 @@
+<!-- 
+// This code is from the book JavaScript: The Definitive Guide, 6th Edition,
+// (ISBN #978-0596805524). Copyright 2011 by David Flanagan. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample13.1-jinlin</title>
+	<style>	
+		.reveal * {display:none;}
+		.reveal *.handle {display:block;}   //remember between "*." there is no blank 
+	</style>
+	<script>
+		window.onload = function(){
+			var elements = document.getElementsByClassName("reveal");
+			for(var i = 0; i < elements.length; i++){
+				var elt = elements[i];
+				var title = elt.getElementsByClassName("handle")[0];
+				addRevealHandler(title,elt);
+			}
+			function addRevealHandler(title,elt) {
+				title.onclick = function(){
+					if(elt.className == "reveal")
+						elt.className = "revealed";
+					else if(elt.className == "revealed")
+						elt.className = "reveal";
+				}
+			}
+		};
+	</script>
+</head>
+<body>
+	<div class="reveal">
+		<h1 class="handle">Click Here to Reveal Hidden Text</h1>
+		<p>This paragraph is hidden.</p>
+	</div>
+</body>
+</html>
