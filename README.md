@@ -1,4 +1,4 @@
-# javasSriptRhinocerosBook
+# javaScriptRhinocerosBook
 
  
 // This code is from the book JavaScript: The Definitive Guide, 6th Edition,
